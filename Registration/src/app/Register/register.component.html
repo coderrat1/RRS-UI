@@ -1,0 +1,43 @@
+
+  <form #reg="ngForm" (ngSubmit)="onSubmit()"> 
+    <div class="container">
+      <h1>Register</h1>
+      <p>Please fill in this form to create an account.</p>
+      <hr>
+  
+      <label for="lname">Name:</label><br>
+      <input type="text"  name="name" required [(ngModel)]="register.Name"><br>
+      
+      <label for="fname">Email:</label><br>
+      <input type="email" placeholder="Enter Email" name="email" id="email" required [(ngModel)]="register.Email"><br>
+      
+      <label for="fname">Dob:</label><br>
+      <input type="date"  name="Dob" required [(ngModel)]="register.Dob"><br>
+      
+      <label for="fname">Password:</label><br>
+      <input type="Password" name="Password"required  [(ngModel)]="register.Password"><br>
+      
+      <label for="ConfirmPassword">ConfirmPassword:</label><br>
+       <input type="Password"  name="ConfirmPassword" required  [(ngModel)]="register.ConformPassword"><br>
+      <br>
+      <label for="standard-select">Gender</label>
+      <div class="select">
+        <select id="standard-select" name="Gender" required  [(ngModel)]="register.Gender">
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+          <option value="others">Others</option>
+          
+          
+         
+        </select>
+      </div> <br>
+      
+               <br>
+      
+      <button><b>REGISTOR</b></button>
+      
+    </div>
+    
+    
+  </form>
+      
